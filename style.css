@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.nav{
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    overflow: auto;
+    width: 100%;
+    height: 35px;
+    padding: 5px;
+    background-color: #0c1e38;
+}
+.nav img{
+    height: 100%;
+    float: left;
+}
+.nav a{
+    float: right;
+    box-sizing: border-box;
+    margin: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 100px;
+    font-style: normal;
+    font-size: 15px;
+    color: #9ebccb;
+}
+.section1_chua_slogan{
+    position: relative;
+    background-image: linear-gradient(-225deg,#0c1e381f, #0c1e38) , url(resource/images/background.png);
+    background-size: cover;
+    background-attachment: fixed;
+    height: fit-content;
+    padding-top: 55px;
+}
+.section1_chua_slogan .title_ten_web{
+    font-family: "Comic Relief", system-ui;
+    font-weight: 400;
+    color: #ffffff;
+    margin-left: 50px;
+    font-size: 48px;
+}
+.container_slogan{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
+
+}
+.slogan{
+    top:10px;
+    max-width: 300px;
+    margin: 10px;
+    font-family: "Playpen Sans", cursive;
+    font-size: 26px;
+    color: #bed9e7;
+    text-align: center;
+}
