@@ -1,11 +1,25 @@
-*{
-    background-color: #0c1e38 ; /* xanh dương đen, màu nền đầu */
-    color: #9ebccb;/*màu chữ của link ở nav*/
+.trangchu{
+    background-color: #0c1e38 ; /* nav */
+    color: #9ebccb;/*nav a*/
+    color: #cce6f3; /*nav a hover*/
+    linear-gradient(-225deg,#10294d8a, #060f1b);/* color của background ở đầu */
     color: #ffffff;/*màu chử của title*/
     color: #bed9e7;/*màu chử của mấy câu nói*/
+    color: #f56b6b;/* slogan hover*/
     color:#3d605b;/*màu chử của các toán */
     color: #d7495b; /*màu chữ của hoá */
     color: #4b77c4;/* màu chữ của lý*/
 }
 
+
+
+.H_trong{
+    color: #1f3546 /*nav*/
+    #dcebf9 /*nav a*/
+    #e7e4e1 /*tên thầy trọng*/
+    #4093e2 /*màu nền*/
+    #ffffff /*màu link*/
+    #ef436d/*button*/
+    #e7e4e1/*button title*/
+}
 

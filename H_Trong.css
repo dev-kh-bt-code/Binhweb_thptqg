@@ -1,0 +1,138 @@
+@keyframes slide_l_r{
+    from{
+        transform: translateX(-20px);
+        opacity:0;
+    }
+    to{
+        transform:translateX(0);
+        opacity:1;
+    }
+}
+
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+*{
+    padding: 0;
+    margin: 0;
+}
+.nav{
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    overflow: auto;
+    width: 100%;
+    height: 35px;
+    padding: 5px;
+    background-color: #1f3546;
+}
+.nav img{
+    height: 100%;
+    float: left;
+}
+.nav a{
+    float: right;
+    box-sizing: border-box;
+    margin: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 100px;
+    font-style: normal;
+    font-size: 15px;
+    color: #9ebccb;
+    transition: 0.15s ease-in;
+}
+
+.nav a:hover{
+    color: #cce6f3;
+    font-size: 17px;
+    transform: translateY(2px);
+
+}
+
+#section1{
+    background-image: linear-gradient(-225deg,#00000000 , #15436e ) ,url(resource/images/p_H_Trong/b_1.png);
+    background-size: cover;
+    background-attachment: fixed;
+    height: fit-content;
+    padding-top: 55px;
+
+
+}
+
+.container1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+}
+.chuaimg{
+    max-width: 400px;
+}
+.img_trong{
+    width:100%;
+}
+.title{
+    font-family: "Playpen Sans", cursive;
+    font-weight: bold;
+    font-size: 29px;
+    text-align:center;
+    color:#e7e4e1;
+}
+.chua2container{
+    align-items: center;
+}
+.chuabutton{
+    margin-top: 15px;
+    justify-items:center;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+}
+
+.button{
+    display: flex;
+    box-sizing: border-box;
+    color: #e7e4e1;
+    background-color: #ef436d;
+    width:110px;
+    height:50px;
+    border-radius:15px;
+    align-items: center;         
+    justify-content: center;  
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bold;
+    font-size:21px;
+    margin:10px;
+    text-decoration: none;
+}
+
+.chualink{
+    margin-top: 20px;
+}
+.link{
+    margin-top: 15px;
+    margin-left: 10px;
+    display: block;
+    font-family: "Playpen Sans", cursive;
+    text-decoration: none;
+    font-size: 26px;
+    color:#e7e4e1;
+}
+
+#section2{
+    background-image: url(resource/images/p_trangchu/background_chua_link.png);
+    background-attachment: fixed;
+    background-size: cover;
+    height: fit-content;
+
+}
+
+.cotainerchualist{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(600px,1fr));
+}
+
+.details{
+    cursor:pointer;
+}
