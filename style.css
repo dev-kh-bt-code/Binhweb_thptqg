@@ -1,3 +1,29 @@
+@keyframes slide_l_r{
+    from{
+        transform: translateX(-20px);
+        opacity:0;
+    }
+    to{
+        transform:translateX(0);
+        opacity:1;
+    }
+}
+
+@keyframes zoom_shadow{
+    from{
+        width: 100%;
+
+    }
+    to{
+        width: 105%;
+        filter: drop-shadow(5px 5px 5px #0c1e38);
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  
 *{
     padding: 0;
     margin: 0;
@@ -27,16 +53,27 @@
     font-style: normal;
     font-size: 15px;
     color: #9ebccb;
+    transition: 0.15s ease-in;
 }
+
+.nav a:hover{
+    color: #cce6f3;
+    font-size: 17px;
+    transform: translateY(2px);
+
+}
+
 .section1_chua_slogan{
     position: relative;
-    background-image: linear-gradient(-225deg,#0c1e381f, #0c1e38) , url(resource/images/background.png);
+    background-image: linear-gradient(-225deg,#10294d8a, #060f1b) , url(resource/images/p_trangchu/background.png);
     background-size: cover;
     background-attachment: fixed;
     height: fit-content;
     padding-top: 55px;
 }
 .section1_chua_slogan .title_ten_web{
+    animation: slide_l_r 0.5s ease-in forwards;
+    margin-bottom: 20px;
     font-family: "Comic Relief", system-ui;
     font-weight: 400;
     color: #ffffff;
@@ -46,9 +83,10 @@
 .container_slogan{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
-
+    justify-items: center;
 }
 .slogan{
+    animation: slide_l_r 0.5s ease-in forwards;
     top:10px;
     max-width: 300px;
     margin: 10px;
@@ -56,4 +94,68 @@
     font-size: 26px;
     color: #bed9e7;
     text-align: center;
+    transition: transform 0.3s ease, filter 0.3s ease;
+
+
 }
+
+.slogan:hover{
+    font-style:italic;
+    color: #f56b6b ;
+}
+
+.section2_chua_link{
+    background-image: url(resource/images/p_trangchu/background_chua_link.png);
+    background-attachment: fixed;
+    background-size: cover;
+    height: fit-content;
+}
+
+.title_in_section2{
+    animation: slide_l_r 0.5s ease-in forwards;
+    font-family: "Baloo Bhai 2", sans-serif;
+    font-size: 108px;
+    font-weight: bold;
+    font-style: normal;
+    color: #41346e;
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+}
+
+
+
+.container_in_section2{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+    justify-items:center;
+}
+
+.container_in_section2 figure{
+    max-width:300px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+
+}
+.container_in_section2 figure:hover{
+
+    transform: scale(1.05);
+    filter: drop-shadow(5px 5px 5px #0c1e38);
+  
+}
+.img_container_in_section2{
+    animation: slide_l_r 0.5s ease-in forwards;
+    width: 100%;
+}
+
+
+
+.caption{
+    animation: slide_l_r 0.5s ease-in forwards;
+    text-align: center;
+    font-family: "Playpen Sans", cursive;
+    font-size: 26px;
+    font-weight: bold;
+    font-style: normal;
+    color: #4c4b9b;
+}
+
