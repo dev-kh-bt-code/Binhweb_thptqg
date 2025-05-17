@@ -169,10 +169,10 @@ html {
 .layer1 {
     margin: 20px;
     padding-right: 15px;
+    padding-bottom: 15px;
     background-color: #a198c944;
     border-radius: 25px;
     border: #a198c9dc solid 2px;
-
     font-family: "Playpen Sans", cursive;
     color: #bc9f8f;
     font-size: 26px;
@@ -181,10 +181,15 @@ html {
     list-style: none;
     cursor: pointer;
     padding-left: 20px;
+    transition: 0.25s ease-in;
+}
+.layer1:hover{
+    transform:scale(1.03);
 }
 
 .layer2 {
     margin-top: 15px;
+    background-color: #e4904b44;
     border: #bc9f8f solid 1px;
     border-radius: 15px;
     box-shadow: 5px 5px 5px #5e4c438c;
@@ -199,7 +204,7 @@ html {
 }
 
 .layer3 {
-    font-family: "Comic Relief", cursive;
+    font-family: "Playpen Sans", cursive;
     color: #312823;
     font-size: 18px;
     font-weight: normal;
