@@ -1,24 +1,104 @@
-@keyframes slide_l_r{
-    from{
+@keyframes slide_l_r {
+    from {
         transform: translateX(-20px);
-        opacity:0;
+        opacity: 0;
     }
-    to{
-        transform:translateX(0);
-        opacity:1;
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes colorchange {
+    0% {
+        transform: scale(1.01);
+
+        text-shadow:
+            -1px -1px 0 black,
+            1px -1px 0 black,
+            -1px 1px 0 black,
+            1px 1px 0 black,
+            -5px -5px 15px rgb(38, 0, 255),
+            5px -5px 15px rgb(255, 0, 0),
+            -5px 5px 15px rgb(208, 255, 0),
+            5px 5px 15px rgb(2, 247, 255);
+
+    }
+
+    25% {
+        transform: scale(1.02);
+
+
+        text-shadow:
+            -1px -1px 0 black,
+            1px -1px 0 black,
+            -1px 1px 0 black,
+            1px 1px 0 black,
+            -5px -5px 15px rgb(40, 2, 255),
+            5px -5px 15px rgb(255, 0, 0),
+            -5px 5px 15px rgb(21, 255, 0),
+            5px 5px 15px rgb(255, 255, 255);
+
+    }
+
+    50% {
+        transform: scale(1.03);
+
+
+        text-shadow:
+
+            -1px -1px 0 black,
+            1px -1px 0 black,
+            -1px 1px 0 black,
+            1px 1px 0 black,
+            -5px -5px 15px rgb(255, 255, 255),
+            5px -5px 15px rgb(40, 2, 255),
+            -5px 5px 15px rgb(255, 0, 0),
+            5px 5px 15px rgb(21, 255, 0);
+    }
+
+    75% {
+        transform: scale(1.04);
+
+        text-shadow:
+            -1px -1px 0 black,
+            1px -1px 0 black,
+            -1px 1px 0 black,
+            1px 1px 0 black,
+            -5px -5px 15px rgb(21, 255, 0),
+            5px -5px 15px rgb(255, 255, 255),
+            -5px 5px 15px rgb(40, 2, 255),
+            5px 5px 15px rgb(255, 72, 0);
+    }
+
+    100% {
+        transform: scale(1.05);
+
+
+        text-shadow:
+            -1px -1px 0 black,
+            1px -1px 0 black,
+            -1px 1px 0 black,
+            1px 1px 0 black,
+            -5px -5px 15px rgb(255, 72, 0),
+            5px -5px 15px rgb(21, 255, 0),
+            -5px 5px 15px rgb(255, 255, 255),
+            5px 5px 15px rgb(40, 2, 255);
     }
 }
 
 
 html {
     scroll-behavior: smooth;
-  }
-  
-*{
+}
+
+* {
     padding: 0;
     margin: 0;
 }
-.nav{
+
+.nav {
     z-index: 100;
     position: fixed;
     top: 0;
@@ -28,11 +108,13 @@ html {
     padding: 5px;
     background-color: #0c1e38;
 }
-.nav img{
+
+.nav img {
     height: 100%;
     float: left;
 }
-.nav a{
+
+.nav a {
     float: right;
     box-sizing: border-box;
     margin: 5px;
@@ -46,22 +128,63 @@ html {
     transition: 0.15s ease-in;
 }
 
-.nav a:hover{
+.nav a:hover {
     color: #cce6f3;
     font-size: 17px;
     transform: translateY(2px);
 
 }
 
-.section1_chua_slogan{
+.hot {
+    display: inline-block;
+    margin-left: 30px;
+    font-family: "Playpen Sans", cursive;
+    font-size: 60px;
+    font-weight: bold;
+    color: antiquewhite;
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+
+    animation: colorchange 3s ease-in infinite alternate;
+}
+
+.hot_1 a {
+    font-family: "Playpen Sans", cursive;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(27, 11, 73);
+
+    text-decoration: none;
+    transition: 0, 25;
+}
+
+.hot_1 a:hover {
+
+    color: rgb(224, 215, 250);
+    text-shadow:
+        -5px -5px 35px rgb(255, 0, 0),
+        5px -5px 35px rgb(40, 2, 255),
+        -5px 5px 35px rgb(255, 0, 0),
+        5px 5px 35px rgb(21, 255, 0);
+    text-decoration: none;
+    font-size: 55px;
+
+
+}
+
+.section1_chua_slogan {
     position: relative;
-    background-image: linear-gradient(-225deg,#10294d8a, #060f1b) , url(resource/images/p_trangchu/background.png);
+    background-image: linear-gradient(-225deg, #10294d8a, #060f1b), url(resource/images/p_trangchu/background.png);
     background-size: cover;
     background-attachment: fixed;
     height: fit-content;
     padding-top: 55px;
 }
-.section1_chua_slogan .title_ten_web{
+
+.section1_chua_slogan .title_ten_web {
     animation: slide_l_r 0.5s ease-in forwards;
     margin-bottom: 20px;
     font-family: "Comic Relief", system-ui;
@@ -70,14 +193,16 @@ html {
     margin-left: 50px;
     font-size: 48px;
 }
-.container_slogan{
+
+.container_slogan {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
     justify-items: center;
 }
-.slogan{
+
+.slogan {
     animation: slide_l_r 0.5s ease-in forwards;
-    top:10px;
+    top: 10px;
     max-width: 300px;
     margin: 10px;
     font-family: "Playpen Sans", cursive;
@@ -89,19 +214,19 @@ html {
 
 }
 
-.slogan:hover{
-    font-style:italic;
-    color: #f56b6b ;
+.slogan:hover {
+    font-style: italic;
+    color: #f56b6b;
 }
 
-.section2_chua_link{
+.section2_chua_link {
     background-image: url(resource/images/p_trangchu/background_chua_link.png);
     background-attachment: fixed;
     background-size: cover;
     height: fit-content;
 }
 
-.title_in_section2{
+.title_in_section2 {
     animation: slide_l_r 0.5s ease-in forwards;
     font-family: "Baloo Bhai 2", sans-serif;
     font-size: 108px;
@@ -115,31 +240,33 @@ html {
 
 
 
-.container_in_section2{
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
-    justify-items:center;
+.container_in_section2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
 }
 
-.container_in_section2 figure{
-    max-width:300px;
+.container_in_section2 figure {
+    max-width: 300px;
     transition: transform 0.3s ease, filter 0.3s ease;
 
 }
-.container_in_section2 figure:hover{
+
+.container_in_section2 figure:hover {
 
     transform: scale(1.05);
     filter: drop-shadow(5px 5px 5px #0c1e38);
-  
+
 }
-.img_container_in_section2{
+
+.img_container_in_section2 {
     animation: slide_l_r 0.5s ease-in forwards;
     width: 100%;
 }
 
 
 
-.caption{
+.caption {
     animation: slide_l_r 0.5s ease-in forwards;
     text-align: center;
     font-family: "Playpen Sans", cursive;
@@ -148,4 +275,3 @@ html {
     font-style: normal;
     color: #4c4b9b;
 }
-
