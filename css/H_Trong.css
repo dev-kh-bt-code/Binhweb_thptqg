@@ -58,7 +58,7 @@ html {
 }
 
 #section1 {
-    background-image: linear-gradient(-225deg, #00000000, #15436e), url(resource/images/p_H_Trong/b_1.png);
+    background-image: linear-gradient(-225deg, #00000000, #15436e), url(../resource/images/p_H_Trong/b_1.png);
     background-size: cover;
     background-attachment: fixed;
     height: fit-content;
@@ -152,7 +152,7 @@ html {
 }
 
 #section2 {
-    background-image: url(resource/images/p_trangchu/background_chua_link.png);
+    background-image: url(../resource/images/p_trangchu/background_chua_link.png);
     background-attachment: fixed;
     background-size: cover;
     height: fit-content;
@@ -270,7 +270,7 @@ li {
 
 #section3 {
     margin-top: 0;
-    background-image: url(resource/images/p_H_Trong/b_2.png);
+    background-image: url(../resource/images/p_H_Trong/b_2.png);
     background-size: cover;
     background-attachment: fixed;
     height: fit-content;
@@ -447,7 +447,7 @@ li {
 /*-----------------------------------------section4*/
 #section4 {
     margin-top: 0;
-    background-image: linear-gradient(-225deg, rgba(255, 255, 255, 0.596) 25%, rgba(107, 121, 252, 0.733)), url(resource/images/p_H_Trong/b_4.png);
+    background-image: linear-gradient(-225deg, rgba(255, 255, 255, 0.596) 25%, rgba(107, 121, 252, 0.733)), url(../resource/images/p_H_Trong/b_4.png);
     background-size: cover;
     background-attachment: fixed;
     height: fit-content;
