@@ -26,7 +26,7 @@ html {
     top: 0;
     overflow: auto;
     width: 100%;
-    height: 35px;
+    height: 5vh;
     padding: 5px;
     background-color: #1f3546;
 }
@@ -37,23 +37,25 @@ html {
 }
 
 .nav a {
+    display: inline-block;
     float: right;
     box-sizing: border-box;
+    font-size: 2vh;
     margin: 5px;
     text-decoration: none;
     text-align: center;
     font-family: "Inter", sans-serif;
     font-weight: 100px;
     font-style: normal;
-    font-size: 13px;
+
     color: #9ebccb;
     transition: 0.15s ease-in;
 }
 
 .nav a:hover {
     color: #cce6f3;
-    font-size: 15px;
-    transform: translateY(2px);
+    font-size: 2.1vh;
+
 
 }
 
@@ -62,7 +64,7 @@ html {
     background-size: cover;
     background-attachment: fixed;
     height: fit-content;
-    padding-top: 55px;
+    padding-top: 7vh;
 
 
 }
@@ -174,6 +176,7 @@ html {
 }
 
 .layer1 {
+
     margin: 20px;
     padding-right: 15px;
     padding-bottom: 15px;
@@ -287,7 +290,7 @@ li {
 
 .container_chua_card {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
 }
 
 .card {
@@ -430,7 +433,7 @@ li {
     border-radius: 6px;
     place-self: center;
     font-family: "Noto Sans", sans-serif;
-    font-size: 20px;
+    font-size: 1.5vw;
     color: #0a8acb;
     text-align: center;
     align-items: center;

@@ -104,7 +104,7 @@ html {
     top: 0;
     overflow: auto;
     width: 100%;
-    height: 35px;
+    height: 5vh;
     padding: 5px;
     background-color: #0c1e38;
 }
@@ -123,14 +123,14 @@ html {
     font-family: "Inter", sans-serif;
     font-weight: 100px;
     font-style: normal;
-    font-size: 15px;
+    font-size: 3vh;
     color: #9ebccb;
     transition: 0.15s ease-in;
 }
 
 .nav a:hover {
     color: #cce6f3;
-    font-size: 17px;
+    font-size: 3.1vh;
     transform: translateY(2px);
 
 }
@@ -181,7 +181,7 @@ html {
     background-size: cover;
     background-attachment: fixed;
     height: fit-content;
-    padding-top: 55px;
+    padding-top: 7vh;
 }
 
 .section1_chua_slogan .title_ten_web {
@@ -196,14 +196,14 @@ html {
 
 .container_slogan {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
-    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+
 }
 
 .slogan {
     animation: slide_l_r 0.5s ease-in forwards;
     top: 10px;
-    max-width: 300px;
+    max-width: 700px;
     margin: 10px;
     font-family: "Playpen Sans", cursive;
     font-size: 26px;
