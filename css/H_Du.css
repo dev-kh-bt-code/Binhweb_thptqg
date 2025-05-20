@@ -1,0 +1,546 @@
+@keyframes slide_l_r {
+    from {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.nav {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    overflow: auto;
+    width: 100%;
+    height: 5vh;
+    padding: 5px;
+    background-color: #1f3546;
+}
+
+.nav img {
+    height: 100%;
+    float: left;
+}
+
+.nav a {
+    display: inline-block;
+    float: right;
+    box-sizing: border-box;
+    font-size: 2vh;
+    margin: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 100px;
+    font-style: normal;
+
+    color: #9ebccb;
+    transition: 0.15s ease-in;
+}
+
+.nav a:hover {
+    color: #cce6f3;
+    font-size: 2.1vh;
+
+
+}
+
+#section1 {
+    background-image: linear-gradient(-225deg, #00000000, #15436e), url(../resource/images/p_H_Trong/b_1.png);
+    background-size: cover;
+    background-attachment: fixed;
+    height: fit-content;
+    padding-top: 7vh;
+
+
+}
+
+.container1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.chuaimg {
+    max-width: 400px;
+
+}
+
+.img_trong {
+    width: 100%;
+}
+
+.title {
+    font-family: "Playpen Sans", cursive;
+    font-weight: bold;
+    font-size: 29px;
+    text-align: center;
+    color: #e7e4e1;
+}
+
+.chua2container {
+    align-items: center;
+}
+
+.chuabutton {
+    margin-top: 15px;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.button {
+    display: flex;
+    box-sizing: border-box;
+    color: #e7e4e1;
+    background-color: #ef436d;
+    width: 110px;
+    height: 50px;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+    margin: 10px;
+    text-decoration: none;
+    transition: all 0.15s ease-in;
+}
+
+.button:hover {
+    background-color: #ff5680;
+    box-shadow: 5px 5px 25px 10px #ffd3de3b;
+    transform: scale(1.05);
+}
+
+.chualink {
+    margin-top: 20px;
+}
+
+.link {
+    margin-top: 15px;
+    margin-left: 10px;
+    display: block;
+    font-family: "Playpen Sans", cursive;
+    text-decoration: none;
+    font-size: 26px;
+    color: #a198c9;
+    transition: all 0.25s ease-in;
+}
+
+.link:hover {
+    color: white;
+    transform: scale(1.01);
+
+}
+
+.logo {
+    width: 27px;
+    margin-right: 5px;
+
+}
+
+#section2 {
+    background-image: url(../resource/images/p_trangchu/background_chua_link.png);
+    background-attachment: fixed;
+    background-size: cover;
+    height: fit-content;
+
+}
+
+.cotainerchualist {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+}
+
+.st2_title {
+    font-family: "Playpen Sans", cursive;
+    font-size: 50px;
+    font-weight: bold;
+    color: #d7495b;
+    padding-top: 20px;
+    margin-left: 30px;
+}
+
+.layer1 {
+
+    margin: 20px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    background-color: #a198c944;
+    border-radius: 25px;
+    border: #a198c9dc solid 2px;
+    font-family: "Playpen Sans", cursive;
+    color: #bc9f8f;
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+    padding-left: 20px;
+    transition: 0.25s ease-in;
+}
+
+.layer1:hover {
+    transform: scale(1.03);
+}
+
+.layer2 {
+    margin-top: 15px;
+    background-color: #e4904b44;
+    border: #bc9f8f solid 1px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px #5e4c438c;
+    font-family: "Playpen Sans", cursive;
+    color: #5e4c43;
+    font-size: 20px;
+    font-weight: normal;
+    text-decoration: none;
+    list-style-type: none;
+    cursor: pointer;
+    padding-left: 30px;
+}
+
+.layer3 {
+    font-family: "Playpen Sans", cursive;
+    color: #312823;
+    font-size: 18px;
+    font-weight: normal;
+    text-decoration: none;
+    list-style-type: none;
+    cursor: pointer;
+    padding-left: 40px;
+}
+
+.layer3:hover {
+    border: #260761 solid 1px;
+    border-radius: 15px;
+    color: #4033b6;
+}
+
+.layer4 {
+    font-family: "Noto Sans", cursive;
+    color: #000000;
+    font-size: 15px;
+    font-weight: normal;
+    cursor: pointer;
+    padding-left: 40px;
+}
+
+.layer4:hover {
+    border: #220570 solid 1px;
+    color: #ea00ff;
+    border-radius: 15px;
+}
+
+.layer4 li {
+    font-family: "Noto Sans", cursive;
+    color: #6a44d3;
+    font-size: 15px;
+    font-weight: normal;
+
+    cursor: pointer;
+    padding-left: 40px;
+}
+
+.layer3 a {
+    text-decoration: none;
+    transition: 0.25s ease-in;
+}
+
+li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.layer3 a:hover {
+    color: #fdfdfd;
+    transform: translateX(10px);
+}
+
+#section3 {
+    margin-top: 0;
+    background-image: url(../resource/images/p_H_Trong/b_2.png);
+    background-size: cover;
+    background-attachment: fixed;
+    height: fit-content;
+}
+
+.section3-title {
+    margin-top: 10px;
+    font-family: "Playpen Sans", cursive;
+    font-weight: bold;
+    color: #026937;
+    font-size: 47px;
+    place-self: center;
+}
+
+.container_chua_card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+}
+
+.card {
+    max-width: 500px;
+    background-color: #00bf63;
+    border: #02693760 solid 4px;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 10px;
+    padding-bottom: 3px;
+    transition: 0.25s ease-in;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.icon-hoa {
+    display: inline-block;
+    height: 30px;
+
+}
+
+.card_title {
+
+    margin-left: 30px;
+    display: inline-block;
+    padding-bottom: 0px;
+    font-family: "Playpen Sans", cursive;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.box {
+    display: block;
+    height: 3px;
+    width: 75%;
+    background-color: white;
+    justify-self: center;
+}
+
+.card_chua_button {
+    margin-top: 10px;
+    margin-bottom: 3px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    justify-content: center;
+    place-content: center;
+}
+
+.card_button {
+    display: inline-block;
+    background-color: white;
+    border-radius: 6px;
+    place-self: center;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 20px;
+    color: #00bf63;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    width: 70px;
+    transition: 0.2s ease-in;
+}
+
+.card_button:hover {
+    border-radius: 15px;
+    color: #086136;
+}
+
+/*  --------------------------------------tong on hoa vo co */
+.section3-title2 {
+    margin-top: 10px;
+    font-family: "Playpen Sans", cursive;
+    font-weight: bold;
+    color: #074e72;
+    font-size: 47px;
+    place-self: center;
+}
+
+.icon-hoa2 {
+    display: inline-block;
+    height: 15px;
+
+}
+
+.container_chua_card2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.card2 {
+    max-width: 200px;
+    box-shadow: 3px 3px 10px 3px rgba(52, 11, 117, 0.377);
+    background-color: #0a8acb;
+    border: #073c577e solid 4px;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 10px;
+    padding-bottom: 3px;
+    transition: 0.25s ease-in;
+}
+
+.card2:hover {
+    transform: scale(1.05);
+}
+
+.card_title2 {
+    display: inline-block;
+    padding-bottom: 0px;
+    font-family: "Playpen Sans", cursive;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.box2 {
+    display: block;
+    height: 3px;
+    width: 75%;
+    background-color: white;
+    justify-self: center;
+}
+
+.card_chua_button2 {
+    margin-top: 10px;
+    margin-bottom: 3px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    justify-content: center;
+    place-content: center;
+}
+
+.card_button2 {
+    display: inline-block;
+    background-color: white;
+    border-radius: 6px;
+    place-self: center;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1.5vw;
+    color: #0a8acb;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    width: 70px;
+    transition: 0.2s ease-in;
+}
+
+.card_button2:hover {
+    border-radius: 15px;
+    color: #074361;
+}
+
+/*-----------------------------------------section4*/
+#section4 {
+    margin-top: 0;
+    background-image: linear-gradient(-225deg, rgba(255, 255, 255, 0.596) 25%, rgba(107, 121, 252, 0.733)), url(../resource/images/p_H_Trong/b_4.png);
+    background-size: cover;
+    background-attachment: fixed;
+    height: fit-content;
+}
+
+.section4-title {
+    text-shadow: 5px 5px 20px #76ff05, -3px -7px 20px #f50606;
+    margin-top: 10px;
+    font-family: "Playpen Sans", cursive;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 47px;
+    place-self: center;
+}
+
+.container_chua_card4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card4 {
+    max-width: 500px;
+    background-image: linear-gradient(#154abd9c, #0d158683);
+    border: #13034da4 solid 4px;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 10px;
+    padding-bottom: 3px;
+    transition: 0.25s ease-in;
+}
+
+.card4:hover {
+    background-image: linear-gradient(#93abe0, #5c66ff);
+    box-shadow: 5px -5px 15px 10px rgba(2, 25, 66, 0.527);
+    transform: scale(1.05);
+    border: #ffffff solid 4px;
+
+}
+
+.icon-hoa4 {
+    display: inline-block;
+    height: 30px;
+
+}
+
+.card_title4 {
+
+    margin-left: 30px;
+    display: inline-block;
+    padding-bottom: 0px;
+    font-family: "Playpen Sans", cursive;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.box {
+    display: block;
+    height: 3px;
+    width: 75%;
+    background-color: white;
+    justify-self: center;
+}
+
+.card_chua_button4 {
+    margin-top: 10px;
+    margin-bottom: 3px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    justify-content: center;
+    place-content: center;
+}
+
+.card_button4 {
+    display: inline-block;
+    background-color: white;
+    border-radius: 6px;
+    place-self: center;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 20px;
+    color: #0a18dbe0;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    width: 70px;
+    transition: 0.2s ease-in;
+}
+
+.card_button4:hover {
+    border-radius: 15px;
+    color: #0a1068ea;
+}
