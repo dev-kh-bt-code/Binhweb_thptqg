@@ -25,7 +25,7 @@ html {
     position: fixed;
     top: 0;
     overflow: auto;
-    width: 100%;
+    width: 100vw;
     height: 5vh;
     padding: 5px;
     background-color: #1f3546;

@@ -1,0 +1,23 @@
+@media (max-width:640px) {
+    
+    .cotainerchualist {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(90vw, 1fr));
+    }
+    .container_chua_card2 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(90vw, 1fr));
+    }
+    .card2 {
+        max-width: 90vw;
+        box-shadow: 3px 3px 10px 3px rgba(52, 11, 117, 0.377);
+        background-color: #0a8acb;
+        border: #073c577e solid 4px;
+        border-radius: 15px;
+        margin: 5px;
+        padding: 10px;
+        padding-bottom: 3px;
+        transition: 0.25s ease-in;
+    }
+
+}
