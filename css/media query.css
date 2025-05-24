@@ -1,23 +1,56 @@
 @media (max-width:640px) {
+    .st2_title{
+        font-size: 27px !important;
+    }
+    .layer1{
+        font-size: 18px;
+ 
+        margin: 10px;
+    }
+    .layer2{
+        font-size: 15px;
+        padding-left: 10px;
+    }
+    .layer3{
+        font-size: 12px;
+        padding-left: 17px;
+    }
+    .layer4{
+        font-size: 12px;
+        padding-left: 20px;
+    }
     
+    .link{
+        font-size: 15px;
+    }
+    .logo{
+        width: 15px;
+    }
+    .card_button2{
+        font-size: 20px;
+    }
+
     .cotainerchualist {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(90vw, 1fr));
     }
     .container_chua_card2 {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(90vw, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(80vw, 1fr));
+        justify-self: center;
     }
     .card2 {
-        max-width: 90vw;
-        box-shadow: 3px 3px 10px 3px rgba(52, 11, 117, 0.377);
-        background-color: #0a8acb;
-        border: #073c577e solid 4px;
-        border-radius: 15px;
-        margin: 5px;
-        padding: 10px;
-        padding-bottom: 3px;
-        transition: 0.25s ease-in;
-    }
+        max-width: 80vw;
 
+    }
+    .card {
+        max-width: 85vw;
+
+    }
+    .container_chua_card {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(80vw, 1fr));
+        justify-self: center;
+
+    }
 }

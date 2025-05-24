@@ -382,6 +382,7 @@ li {
 .container_chua_card2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
 }
 
 .card2 {
