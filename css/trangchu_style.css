@@ -220,13 +220,13 @@ html {
 }
 
 .section2_chua_link {
-    background-image: url(../resource/images/p_trangchu/background_chua_link.png);
-    background-attachment: fixed;
-    background-size: cover;
-    height: fit-content;
+    width: 100vw;
+    justify-self: center;
+   
 }
 
 .title_in_section2 {
+    background-color: rgb(241, 225, 225);
     animation: slide_l_r 0.5s ease-in forwards;
     font-family: "Baloo Bhai 2", sans-serif;
     font-size: 108px;
@@ -241,37 +241,71 @@ html {
 
 
 .container_in_section2 {
+    background-color: rgb(241, 225, 225);
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     justify-items: center;
 }
 
 .container_in_section2 figure {
+    margin: 10px;
+    background-color: #f9fafb;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(10, 3, 48, 0.363);
     max-width: 300px;
     transition: transform 0.3s ease, filter 0.3s ease;
 
 }
 
 .container_in_section2 figure:hover {
+    transform: translateY(2px);
 
-    transform: scale(1.05);
-    filter: drop-shadow(5px 5px 5px #0c1e38);
+   
 
 }
+#img_h_trong{
 
+    background-image: linear-gradient(rgba(255, 255, 255, 0.603),rgba(255, 255, 255, 0.61)),url(../resource/images/p_trangchu/b_img/b_img_h_trong.png);
+    border-radius: 15px;
+
+}
+#img_h_du{
+
+    background-image: linear-gradient(rgba(255, 255, 255, 0.219),rgba(255, 255, 255, 0.233)),url(../resource/images/p_trangchu/b_img/b_img_h_trong.png);
+    border-radius: 15px;
+
+}
 .img_container_in_section2 {
+
     animation: slide_l_r 0.5s ease-in forwards;
-    width: 100%;
+    width: 95%;
+    justify-self: center;
+    transition: 0.2s ease-in;
+   
 }
-
-
+.img_container_in_section2:hover {
+    width: 100%;
+  
+    filter: drop-shadow(5px 5px 10px #0c1e38);
+}
 
 .caption {
     animation: slide_l_r 0.5s ease-in forwards;
     text-align: center;
-    font-family: "Playpen Sans", cursive;
+    font-family: "Inter", sans-serif;
     font-size: 26px;
     font-weight: bold;
     font-style: normal;
     color: #4c4b9b;
+}
+.caption::before{
+    border: #f56b6b solid 2px;
+    border-radius: 50%;
+    content: "\f00c";
+    padding-left: 2px;
+    padding-right: 1px;
+    font-family: "Font Awesome 6 Free"; /* Font của Font Awesome */
+  color: green;
+  font-weight: 900; /* Đảm bảo biểu tượng hiển thị đúng */
+  margin-left: 5px;
 }
